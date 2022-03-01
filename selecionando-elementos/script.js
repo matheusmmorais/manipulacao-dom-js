@@ -23,3 +23,20 @@ text.innerText = "Olá devs";
 const text = document.querySelector("paragrafo"); // usando innerHTML para adicionar html.
 text.innerHTML = "Olá devs <strong>!!!</strong>";
 
+const text = document.querySelector("input"); // usando value para VER e ADICIONAR valor.
+
+console.log(text.value);
+text.value = "teste";
+
+const texto2 = document.querySelector(".class"); // setando um atributo com setAttribute;
+texto2.setAttribute('id', 'header');
+
+texto2.removeAttribute('id');
+
+const trocarFundo = document.querySelector('body'); // definir estilos usando a tag style;
+trocarFundo.style.backgroundColor = "#f9f3d2"; 
+
+const trocarFundo2 = document.querySelector('body');
+trocarFundo2.classList.add("class"); // adiciona uma classe no body
+trocarFundo2.classList.remove("class"); // remove a classe do body
+trocarFundo2.classList.toggle("class"); // serve como um interruptor, se tiver > remove,  se não tiver > coloca a classe.
